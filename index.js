@@ -99,4 +99,12 @@ setTimeout(() => {
     score += point;
     scoreNumber.innerText = score;
   }
+
+    // Show/Hide Rules
+    btnRules.addEventListener("click", () => {
+      modalRules.classList.toggle("show-modal");
+    });
+    btnClose.addEventListener("click", () => {
+      modalRules.classList.toggle("show-modal");
+    }); 
   
