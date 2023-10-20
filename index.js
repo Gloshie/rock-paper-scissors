@@ -108,3 +108,17 @@ setTimeout(() => {
       modalRules.classList.toggle("show-modal");
     }); 
   
+    // play agin button
+    playAgainBtn.addEventListener("click", () => {
+      gameDiv.classList.toggle("hidden");
+      resultsDiv.classList.toggle("hidden");
+    
+      resultDivs.forEach((resultDiv) => {
+        resultDiv.innerHTML = "";
+        resultDiv.classList.remove("winner");
+      });
+    
+      resultText.innerText = "";
+      resultWinner.classList.toggle("hidden");
+      resultsDiv.classList.toggle("show-winner");
+    });  
