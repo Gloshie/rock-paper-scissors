@@ -23,6 +23,13 @@ body {
   padding-top: 2rem;
 }
 
+@media (max-width: 500px){
+  .container{
+    max-width: 312px;
+  }
+  
+}
+
 .header {
   display: flex;
   justify-content: space-between;
